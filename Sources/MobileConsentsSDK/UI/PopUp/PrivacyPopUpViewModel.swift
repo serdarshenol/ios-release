@@ -16,6 +16,7 @@ protocol PrivacyPopUpViewModelProtocol: UINavigationBarDelegate {
     var onLoadingChange: ((Bool) -> Void)? { get set }
     var onDataLoaded: ((PrivacyPopUpData) -> Void)? { get set }
     var onError: ((Error) -> Void)? { get set }
+    var router: RouterProtocol? { get set }
     
     func viewDidLoad()
     func acceptAll()
